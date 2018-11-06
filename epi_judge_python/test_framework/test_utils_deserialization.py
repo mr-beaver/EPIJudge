@@ -169,6 +169,8 @@ def build_binary_tree(data, key_ctor, node_ctor):
     nodes = [
         None if node == 'null' else node_ctor(key_ctor(node)) for node in data
     ]
+    # It should be a pre-order series, flip for easier operation?
+    # Generated is a bi-directional tree, which means every node stores parent node.
     candidate_children = nodes[::-1]
     root = candidate_children.pop()
     for node in nodes:

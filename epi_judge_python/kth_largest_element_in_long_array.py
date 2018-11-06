@@ -1,3 +1,4 @@
+import heapq
 from test_framework import generic_test
 
 
