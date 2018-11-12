@@ -84,8 +84,8 @@ def is_object_tree_type(tree):
     import bst_node
     return tree is not None and \
            (isinstance(tree, binary_tree_node.BinaryTreeNode) or
-           isinstance(tree, binary_tree_with_parent_prototype.BinaryTreeNode) or
-           isinstance(tree, bst_node.BstNode))
+            isinstance(tree, binary_tree_with_parent_prototype.BinaryTreeNode) or
+            isinstance(tree, bst_node.BstNode))
 
 
 def equal_binary_trees(node1, node2):
